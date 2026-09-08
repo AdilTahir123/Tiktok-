@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif; 
+}
+html, body {
+  height: 100%;
+  width: 100%;
+ background:  white;
+}
+
+
+#container{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h1{
+    margin-bottom:10px;
+}
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(210, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(210, 100%, 60%);
+}
+button:active{
+    background-color: hsl(210, 100%, 70%);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+#diceResult{
+    margin: 25px;
+}
+
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+    animation: roll 0.7s ease-out;
+}
+
+@keyframes roll{
+    0%{
+        transform: scale(0.3) rotate(0deg);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.2) rotate(180deg);
+    }
+    50%{
+        transform: scale(0.9) rotate(360deg);
+    }
+    75%{
+        transform: scale(1.1) rotate(540deg);
+    }
+    100%{
+        transform: scale(1) rotate(720deg);
+        opacity: 1;
+    }
+}
