@@ -18,7 +18,7 @@ function rollDice() {
         values.push(value);
 
         images.push(
-            `<img src="images/${value}.png" alt="Dice ${value}">`
+            `<img src="Images/${value}.png" alt="Dice ${value}">`
         );
     }
 
